@@ -9,7 +9,7 @@ function makeArmy() {
   while (i < 10) {
     let a = i;
     let shooter = function() { // функция shooter
-      alert( a ); // должна выводить порядковый номер
+      сomsole.log(a); // должна выводить порядковый номер
     };
     shooters.push(shooter);
     i++;
