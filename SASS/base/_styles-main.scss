@@ -35,3 +35,7 @@ img {
   height: auto;
   // object-fit: none;
 }
+
+.container {
+  @extend %container;
+}
