@@ -17,3 +17,4 @@ console.log(complexArray);
 
 simpleArray.push('testPush');
 console.log(simpleArray);
+
