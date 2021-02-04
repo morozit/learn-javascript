@@ -80,6 +80,6 @@ const message1 = `Найбільше чсило: ${maxNum1}`
 const message2 = `Найбільше чсило: ${maxNum2}`
 
 
-console.log(message1);
+// console.log(message1);
 
-console.log(message2);
+// console.log(message2);

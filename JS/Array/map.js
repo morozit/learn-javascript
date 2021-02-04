@@ -5,7 +5,7 @@ const z = [
   {'name': '   Petro ', 'order': 12, 'sum': '123. 5'},
 ];
 
-console.log(z);
+// console.log(z);
 
 const zBack = z.map(item => {
   item.name = item.name.trim().toLocaleLowerCase();
@@ -18,8 +18,8 @@ const x = z.map(item => {
   return item;
 })
 
-console.log(z);
+// console.log(z);
 
-console.log(zBack);
+// console.log(zBack);
 
-console.log(x);
+// console.log(x);

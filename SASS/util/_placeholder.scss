@@ -4,7 +4,7 @@
 
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid $accent-color;
+  outline: 1px solid rgb(100, 100, 100);
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -40,7 +40,7 @@
   outline: none;
   cursor: pointer;
   color: $primary-white;
-  background-color: $accent-color;
+  background-color: $text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -50,10 +50,10 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   font-family: inherit;
-  transform: scale(1);
-  transition: transform $timing-animation;
+  transition: all $timing-animation;
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    color: $primary-white;
+    background-color: $accent-color;
   }
 }
