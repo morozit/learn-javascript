@@ -22,36 +22,37 @@ complexArray.push({'name': 'testPush', 'order': 22, 'sum': '999.99'});
 // let simpleArray = [];
 document.querySelector('#push').onclick = () => {
   let id = +document.querySelector('#el-array').value;
-  if(!simpleArray.includes(id)) {
-    simpleArray.push(id);
-  } else {
+  if(simpleArray.includes(id)) {
     console.log(`елемент с id ${id} уже существует, проверте id`);
+  } else {
+    simpleArray.push(id);
+    console.log(simpleArray);
   }
-  console.log(simpleArray);
+  
 }
 
 document.querySelector('#pop').onclick = () => {
   let id = +document.querySelector('#el-array').value;
   let el = simpleArray.pop()
-    console.log(`последний елемент масива с id ${el} удален`);
-  
+  console.log(`последний елемент масива с id ${el} удален`);
   console.log(simpleArray);
 }
 
 document.querySelector('#unshift').onclick = () => {
   let id = +document.querySelector('#el-array').value;
-  if(!simpleArray.includes(id)) {
-    simpleArray.unshift(id);
-  } else {
+  if(simpleArray.includes(id)) {
     console.log(`елемент с id ${id} уже существует, проверте id`);
+  } else {
+    simpleArray.unshift(id);
+    console.log(simpleArray);
   }
-  console.log(simpleArray);
 }
 
 document.querySelector('#shift').onclick = () => {
   let id = +document.querySelector('#el-array').value;
   let el = simpleArray.shift()
-    console.log(`первий елемент масива с id ${el} удален`);
-  
+  console.log(`первий елемент масива с id ${el} удален`);
   console.log(simpleArray);
 }
+
+
